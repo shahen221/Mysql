@@ -1,0 +1,39 @@
+'','CDB (AI &A Council) (268)',1\n
+'','Chennai AIM Outreach(003)',1\n
+'','Chennai AVM Outreach(262)',1\n
+'','Chennai BFS Outreach(009)',1\n
+'','Chennai BPS Outreach(011)',1\n
+'','Chennai CAS Outreach(031)',1\n
+'','Chennai CIS Outreach(151)',1\n
+'','Chennai Communication Testing (052)',1\n
+'','Chennai Community(271)',1\n
+'','Chennai ComTech Outreach(030)',1\n
+'','Chennai CWS Outreach(029)',1\n
+'','Chennai DE Outreach(014)',1\n
+'','Chennai DEP Outreach(037)',1\n
+'','Chennai EAS ERP Outreach(119)',1\n
+'','Chennai EAS IPM Outreach(158)',1\n
+'','Chennai EAS OSP Outreach(010)',1\n
+'','Chennai EAS SAP Outreach(006)',1\n
+'','Chennai EBA Outreach(162)',1\n
+'','Chennai Finance Outreach(159)',1\n
+'','Chennai Global Mobility PFSS Outreach(013)',1\n
+'','Chennai GoGreen(192)',1\n
+'','Chennai GTO Outreach(163)',1\n
+'','Chennai Healthcare Outreach(028)',1\n
+'','Chennai IME Outreach(032)',1\n
+'','Chennai Insurance Outreach(007)',1\n
+'','Chennai Life Sciences Outreach(002)',1\n
+'','Chennai MLEU Outreach(005)',1\n
+'','Chennai NFT Outreach(164)',1\n
+'','Chennai NSS Outreach(036)',1\n
+'','Chennai Others Outreach(038)',1\n
+'','Chennai PACE Outreach(165)',1\n
+'','Chennai QE&A CIMTechCas Outreach(062)',1\n
+'','Chennai QE&A Insurance Outreach(166)',1\n
+'','Chennai QE&A Outreach(008)',1\n
+'','Chennai QE&A RCGML Outreach(152)',1\n
+'','Chennai RCG Outreach(132)',1\n
+'','Chennai SCEP Outreach(049)',1\n
+'','Chennai TSC Outreach(034)',1\n
+'','Outreach Chennai(045)',1\n

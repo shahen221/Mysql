@@ -1,0 +1,51 @@
+Data Load:
+
+location:
+insert into location values (2, 'bangalore', 'Karnataka', 'India');
+insert into location values (3, 'hyderabad', 'Telangana', 'India');
+insert into location values (4, 'coimbatore', 'TamilNadu', 'India');
+insert into location values (5, 'kochi', 'Kerala', 'India');
+insert into location values (6, 'pune', 'Maharastra', 'India');
+insert into location values (7, 'kolkata', 'West Bengal', 'India');
+insert into location values (8, 'delhi', 'Delhi', 'India');
+
+insert into roles (role_name, created_by) values ('Admin', 200816);
+insert into roles (role_name, created_by) values ('PMO', 200816);
+insert into roles (role_name, created_by) values ('POC', 200816);
+insert into roles (role_name, created_by) values ('Associate', 200816);
+
+insert into employee (employee_id, first_name, last_name, role_id) values (200816, 'Shahensha', 'Syed', 1);
+insert into employee (employee_id, first_name, last_name, role_id) values (511371, 'Ayyappa', 'Thumma', 1);
+
+insert into login_info (user_name, user_pwd, role_id) values ('ayyappa.thumma', 'outreach', 1);
+insert into login_info (user_name, user_pwd, role_id) values ('shahensha.syed', 'outreach', 1);
+insert into login_info (user_name, user_pwd, role_id) values ('shah_pmo', 'outreach', 2);
+insert into login_info (user_name, user_pwd, role_id) values ('shah_poc', 'outreach', 3);
+insert into login_info (user_name, user_pwd, role_id) values ('shah_associate', 'outreach', 4);
+ 
+Alter table location AUTO_INCREMENT=1;
+
+LOAD DATA LOCAL INFILE 'C:\\Users\\Admin\\Documents\\MySql\\location.txt' INTO TABLE location
+FIELDS TERMINATED BY ',' ENCLOSED BY '' LINES TERMINATED BY '\n';
+
+
+LOAD DATA LOCAL INFILE 'C:\\Users\\Admin\\Documents\\MySql\\beneficiary.txt' INTO TABLE beneficiary
+FIELDS TERMINATED BY ',' ENCLOSED BY '' LINES TERMINATED BY '\n';
+
+LOAD DATA LOCAL INFILE 'C:\\Users\\Admin\\Documents\\MySql\\council.txt' INTO TABLE council
+FIELDS TERMINATED BY ',' ENCLOSED BY '' LINES TERMINATED BY '\n';
+
+LOAD DATA LOCAL INFILE 'C:\\Users\\Admin\\Documents\\MySql\\project.txt' INTO TABLE project
+FIELDS TERMINATED BY ',' ENCLOSED BY '' LINES TERMINATED BY '\n';
+
+LOAD DATA LOCAL INFILE 'C:\\Users\\Admin\\Documents\\MySql\\project_category.txt' INTO TABLE project_category
+FIELDS TERMINATED BY ',' ENCLOSED BY '' LINES TERMINATED BY '\n';
+
+LOAD DATA LOCAL INFILE 'C:\\Users\\Admin\\Documents\\MySql\\transport_boarding_type.txt' INTO TABLE transport_boarding_type
+FIELDS TERMINATED BY ',' ENCLOSED BY '' LINES TERMINATED BY '\n';
+
+LOAD DATA LOCAL INFILE 'C:\\Users\\Admin\\Documents\\MySql\\transport_boarding_points.txt' INTO TABLE transport_boarding_points
+FIELDS TERMINATED BY ',' ENCLOSED BY '' LINES TERMINATED BY '\n';
+
+LOAD DATA LOCAL INFILE 'C:\\Users\\Admin\\Documents\\MySql\\business_unit.txt' INTO TABLE business_unit_info
+FIELDS TERMINATED BY ',' ENCLOSED BY '' LINES TERMINATED BY '\n';

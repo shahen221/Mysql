@@ -1,0 +1,30 @@
+'','Banking & Financial Services'\n
+'','Field Marketing'\n
+'','APAC Leadership & Operations'\n
+'','CDB-AIA-BFS'\n
+'','CDB-AIA-BAI-BIG Data'\n
+'','Corporate Communications'\n
+'','EAS-IPM-CEP-DIGITAL'\n
+'','EAS-IPM-PEGA'\n
+'','Quality Engineering &Assurance'\n
+'','Recruitment'\n
+'','CIS EUC'\n
+'','Testing-BFS Products'\n
+'','Cognizant Infra Services'\n
+'','Intelligent Automation & Tech'\n
+'','AVM-AIA- DI'\n
+'','Digital Ops - F&A Delivery'\n
+'','QEA CRM'\n
+'','CDB-AIA-BAI-MDM'\n
+'','CDB-AIA-AIA'\n
+'','Entry Level Trainees'\n
+'','CIS CSI CPS'\n
+'','CBC Strategy & Transformation'\n
+'','CommsMedia'\n
+'','Cognizant Digital Operations'\n
+'','AVM'\n
+'','CDB-AIA-IMS-AISQuAD'\n
+'','CIS DCO'\n
+'','CDB-AIA-IMS-BI'\n
+'','RCGTH-Retail & Consumer Goods'\n
+'','Insurance'\n

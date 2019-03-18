@@ -1,0 +1,10 @@
+1,'Abhiramapuram-Cp Ramaswamy Road Pizza Cornner',1\n
+2,'Adambakkam-Brindavan Nagar',1\n
+3,'Adambakkam-Jayalakshmi Theatre',1\n
+4,'Adambakkam-Kakkan Bridge',1\n
+5,'Adambakkam-Mahalakshmi Nagar',1\n
+6,'Adambakkam-NGO Colony',1\n
+7,'Adambakkam-Police Station',1\n
+8,'Adambakkam-Punjab National Bank ATM',1\n
+9,'Adambakkam-SP Hospital',1\n
+10,'Adhanoor-Bus stop',1\n

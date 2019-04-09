@@ -23,9 +23,9 @@ CREATE TABLE transport_boarding_points (boarding_point_id SMALLINT UNSIGNED NOT 
 
 CREATE TABLE transport_drop_points (drop_point_id SMALLINT UNSIGNED NOT NULL, drop_point_name VARCHAR(40) NOT NULL, location_id SMALLINT UNSIGNED NOT NULL REFERENCES location(location_id), PRIMARY KEY(drop_point_id, location_id));
 
-CREATE TABLE associate_willingness_info (employee_id MEDIUMINT UNSIGNED NOT NULL REFERENCES employee(employee_id), location_id SMALLINT UNSIGNED NOT NULL REFERENCES location(location_id),
+CREATE TABLE associate_willingness_info (willingness_id MEDIUMINT UNSIGNED NOT NULL AUTO_INCREMENT,employee_id MEDIUMINT UNSIGNED NOT NULL REFERENCES employee(employee_id), location_id SMALLINT UNSIGNED NOT NULL REFERENCES location(location_id),
 avail_start_date TIMESTAMP NOT NULL, avail_end_date TIMESTAMP NOT NULL, status VARCHAR(10), created_time TIMESTAMP NOT NULL,
-updated_time TIMESTAMP, PRIMARY KEY(employee_id, location_id));
+updated_time TIMESTAMP, PRIMARY KEY(willingness_id));
 
 CREATE TABLE event_info (event_id MEDIUMINT UNSIGNED NOT NULL AUTO_INCREMENT, beneficiary_id SMALLINT UNSIGNED NOT NULL REFERENCES beneficiary(beneficiary_id),
 council_id SMALLINT UNSIGNED NOT NULL REFERENCES council(council_id), project_id SMALLINT UNSIGNED NOT NULL REFERENCES project(project_id),
@@ -44,14 +44,15 @@ CREATE TABLE business_unit_info (business_unit_id SMALLINT UNSIGNED NOT NULL AUT
 CREATE TABLE event_register_info (registration_id MEDIUMINT UNSIGNED NOT NULL AUTO_INCREMENT, event_id MEDIUMINT UNSIGNED NOT NULL REFERENCES event_info(event_id),
 scheduled_date DATE NOT NULL, associate_id MEDIUMINT UNSIGNED NOT NULL REFERENCES employee(employee_id),
 associate_first_name VARCHAR(40) NOT NULL, associate_last_name VARCHAR(40) NOT NULL,
-hours_spent SMALLINT UNSIGNED NOT NULL, travel_hours SMALLINT UNSIGNED NOT NULL, impacted_lives MEDIUMINT UNSIGNED NOT NULL,
+hours_spent SMALLINT UNSIGNED, travel_hours SMALLINT UNSIGNED, impacted_lives MEDIUMINT UNSIGNED,
 business_unit_id SMALLINT UNSIGNED NOT NULL REFERENCES business_unit_info(business_unit_id),
 status VARCHAR(20), boarding_type_id SMALLINT UNSIGNED NOT NULL REFERENCES transport_boarding_type(boarding_type_id),
 boarding_point_id SMALLINT UNSIGNED REFERENCES transport_boarding_points(boarding_point_id),
 drop_point_id SMALLINT UNSIGNED REFERENCES transport_drop_points(drop_point_id),
+location_id SMALLINT unsigned NOT NULL REFERENCES location(location_id),
 created_time TIMESTAMP NOT NULL, updated_time TIMESTAMP, updated_by MEDIUMINT unsigned REFERENCES employee(employee_id),
 PRIMARY KEY(registration_id));
 
-CREATE TABLE login_info ( user_name VARCHAR(80) NOT NULL, user_pwd VARCHAR(20) NOT NULL, user_dob DATE, mobile_no VARCHAR(14), role_id SMALLINT UNSIGNED REFERENCES roles(role_id), PRIMARY KEY(user_name));
+CREATE TABLE login_info ( employee_id MEDIUMINT UNSIGNED NOT NULL, user_name VARCHAR(80) NOT NULL, user_pwd VARCHAR(20) NOT NULL, user_dob DATE, mobile_no VARCHAR(14), role_id SMALLINT UNSIGNED REFERENCES roles(role_id), PRIMARY KEY(user_name));
 
 LOAD DATA LOCAL INFILE 'C:\\Users\\Admin\\Documents\\MySql\\location.xlsx' INTO TABLE location;

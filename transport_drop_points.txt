@@ -1,0 +1,9 @@
+1,Chromepet West-Balaji Hospital,1\n
+2,Chromepet West-Bus stop,1\n
+3,Chromepet-Lakshmipuram Bus stop,1\n
+4,Chromepet-MIT Gate-Bus stop,1\n
+5,Chromepet-Nemilichery Bus stop,1\n
+6,Chromepet-Radha Nagar St.Marks Matriculation H S School,1\n
+7,Chromepet-Railway Station,1\n
+8,Chromepet-Ramar Koil,1\n
+9,Chromepet-Zameen Royapettah,1\n

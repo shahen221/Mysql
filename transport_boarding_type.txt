@@ -1,3 +1,3 @@
-'','Fixed'\n
-'','Floating'\n,
-'','No Transport'\n
+,Fixed\n
+,Floating\n,
+,No Transport\n
